@@ -42,7 +42,7 @@ Aggregated with the pack; **not** covered by CC BY-NC-SA. Full details in
 | ExposeAir Aurorae decoration | `third-party/exposeair/aurorae/themes/exposeair/` | Mark Whittaker | GPL (LICENSE: GPL-3.0) |
 | ExposeAir color scheme | `third-party/exposeair/color-schemes/ExposeAir.colors` | Mark Whittaker | GPL |
 | ExposeAir Kvantum theme | `third-party/exposeair/kvantum/ExposeAir/` | Mark Whittaker | GPL |
-| Kvantum theme `windows-7-enhnaced` | `kvantum/windows-7-enhnaced/` | see LICENSE | GPL-3.0 (LICENSE file) |
+| Kvantum theme `windows-7-enhanced` | `kvantum/windows-7-enhanced/` | Mark Whittaker (ExposeAir), modified by Leon Khoo | GPL-3.0 (LICENSE file) |
 | windows7splash | `third-party/windows7splash/plasma/look-and-feel/windows7splash/` | luis-pseudo / AudacityXD62 | GPL |
 
 **Modification:** `windows7splash`'s `contents/splash/tahoma.ttf` (proprietary

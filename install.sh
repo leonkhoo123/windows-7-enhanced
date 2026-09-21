@@ -8,7 +8,7 @@
 #                icons/windows-7-enhanced              -> <icons>
 #                color-schemes/*.colors                -> <color-schemes>
 #                look-and-feel/windows-7-enhanced      -> <plasma/look-and-feel>
-#                kvantum/windows-7-enhnaced            -> <config>/Kvantum
+#                kvantum/windows-7-enhanced            -> <config>/Kvantum
 #
 #                third-party/exposeair/...             -> exposeair plasma theme,
 #                                                         Aurorae decoration,
@@ -42,7 +42,7 @@ CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
 DEST_ICONS="${DATA_HOME}/icons/windows-7-enhanced"
 DEST_COLORS="${DATA_HOME}/color-schemes"
 DEST_LNF="${DATA_HOME}/plasma/look-and-feel/windows-7-enhanced"
-DEST_KVANTUM_WIN7="${CONFIG_HOME}/Kvantum/windows-7-enhnaced"
+DEST_KVANTUM_WIN7="${CONFIG_HOME}/Kvantum/windows-7-enhanced"
 
 # bundled third-party components
 DEST_DESKTOPTHEME="${DATA_HOME}/plasma/desktoptheme/exposeair"
@@ -129,7 +129,7 @@ install_pack() {
 
     info "Installing Kvantum theme -> ${DEST_KVANTUM_WIN7}"
     mkdir -p -- "${CONFIG_HOME}/Kvantum"
-    copy_tree "${SCRIPT_DIR}/kvantum/windows-7-enhnaced" "${DEST_KVANTUM_WIN7}"
+    copy_tree "${SCRIPT_DIR}/kvantum/windows-7-enhanced" "${DEST_KVANTUM_WIN7}"
 
     # --- bundled third-party components (GPL, see third-party/NOTICE.md) ---
     info "Installing ExposeAir Plasma theme -> ${DEST_DESKTOPTHEME}"

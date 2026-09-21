@@ -24,7 +24,7 @@ Enhanced edition by **Leon Khoo**, based on the original
 | **ExposeAir** color scheme | `third-party/exposeair/color-schemes/ExposeAir.colors` | `~/.local/share/color-schemes/ExposeAir.colors` |
 | **ExposeAir** Kvantum theme | `third-party/exposeair/kvantum/ExposeAir/` | `~/.config/Kvantum/ExposeAir/` |
 | **windows7splash** splash | `third-party/windows7splash/` | `~/.local/share/plasma/look-and-feel/windows7splash/` |
-| **Kvantum** theme `windows-7-enhnaced` (GPL-3.0) | `kvantum/windows-7-enhnaced/` | `~/.config/Kvantum/windows-7-enhnaced/` |
+| **Kvantum** theme `windows-7-enhanced` (modified from ExposeAir, GPL-3.0) | `kvantum/windows-7-enhanced/` | `~/.config/Kvantum/windows-7-enhanced/` |
 
 The project files are **CC BY-NC-SA 4.0**
 ([license](https://creativecommons.org/licenses/by-nc-sa/4.0/)); the bundled
@@ -55,7 +55,7 @@ an application, not a theme, so it is not bundled — install it with your distr
 | Ubuntu / Debian | `sudo apt install kvantum-manager` |
 | openSUSE Tumbleweed | `sudo zypper install kvantum-manager kvantum-qt6` |
 
-Then in **Kvantum Manager**, select the **`windows-7-enhnaced`** theme
+Then in **Kvantum Manager**, select the **`windows-7-enhanced`** theme
 (bundled by this pack into `~/.config/Kvantum/`).
 
 ## Notes

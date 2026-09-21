@@ -22,7 +22,8 @@
  ------------------------------------------------------------------
    ExposeAir Plasma theme + Aurorae decoration + color scheme
                                       Mark Whittaker (GPL)
-   kvantum/windows-7-enhnaced         Kvantum widget theme (GPL-3.0)
+   kvantum/windows-7-enhanced         Kvantum widget theme, modified from
+                                      ExposeAir (GPL-3.0)
    windows7splash                     luis-pseudo / AudacityXD62 (GPL)
    (Kvantum engine itself is not bundled - install the kvantum package)
 

@@ -32,7 +32,10 @@ the pack and are **not** covered by the pack's CC BY-NC-SA license.
 **Not bundled.** `widgetStyle=kvantum` requires the Kvantum package
 (GPL-3.0-or-later) to be installed by the user. Only Kvantum *themes* ship here.
 
-## Kvantum theme `windows-7-enhnaced`
+## Kvantum theme `windows-7-enhanced`
 
-- **Path:** `../../kvantum/windows-7-enhnaced/`
-- **License:** GPL-3.0 (per its `LICENSE` file)
+- **Path:** `../../kvantum/windows-7-enhanced/`
+- **Based on:** ExposeAir's Kvantum theme by Mark Whittaker (Phobian347), GPL-3.0
+- **Modified by:** Leon Khoo — renamed/adapted for the Windows 7 Enhanced pack
+- **License:** GPL-3.0 (per its `LICENSE` file). As a modified GPL work it keeps
+  the license and carries a modification notice.
