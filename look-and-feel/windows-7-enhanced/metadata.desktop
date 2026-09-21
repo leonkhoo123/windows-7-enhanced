@@ -1,0 +1,13 @@
+[Desktop Entry]
+Comment=Windows 7 Enhanced - Windows 7 style icons, colors and desktop layout
+Name=Windows 7 Enhanced
+X-KDE-PluginInfo-Author=Leon Khoo
+X-KDE-PluginInfo-Category=Plasma Look And Feel
+X-KDE-PluginInfo-Email=
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-License=CC-BY-NC-SA-4.0
+X-KDE-PluginInfo-Name=windows-7-enhanced
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Website=https://github.com/leonkhoo123/windows-7-enhanced
+X-KDE-ServiceTypes=Plasma/LookAndFeel
+X-Plasma-API=5.0

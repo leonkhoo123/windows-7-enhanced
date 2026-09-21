@@ -1,0 +1,34 @@
+ Authors : Blackcrack (Blacky)
+ Homepage : [Blackysgate.de](https://www.blackysgate.de)
+
+ ------------------------------------------------------------------------
+ Windows 7 Enhanced edition  (KDE theme pack)
+ Enhanced by : Leon Khoo
+ Based on    : "Plasma SVG Win7 Theme" by Blackcrack / Blackysgate.de
+
+ The original theme and its artwork remain the work of the original
+ author. This enhanced edition adds touched-up metadata, a user-level
+ install script and further icon refinements, while keeping the original
+ authorship and license intact.
+
+ Components in this pack
+ -----------------------
+   icons/windows-7-enhanced           icon theme (original artwork by
+                                      Blackcrack / Blackysgate.de)
+   color-schemes/Windows7Enhanced     Windows 7 Aero color scheme
+   look-and-feel/windows-7-enhanced   Plasma global theme (look-and-feel)
+
+ Third-party components referenced by the look-and-feel (not bundled here)
+ -------------------------------------------------------------------------
+   ExposeAir Plasma theme + Aurorae decoration   Mark Whittaker (GPL)
+   Kvantum widget style                          Kvantum project (GPL-3.0-or-later)
+   windows7splash                                luis-pseudo / AudacityXD62 (GPL)
+
+ Not referenced (no clear open license): "Win7Bulid-cursors" cursor theme and
+ the original pack's wallpaper images. See LICENSES.md.
+
+ License summary: entire pack (icon theme, color scheme and global theme)
+ released under CC BY-NC-SA, matching the original icon theme. Third-party
+ themes referenced by the global theme keep their own licenses (ExposeAir,
+ Kvantum, windows7splash are GPL). See COPYING and LICENSES.md.
+ ------------------------------------------------------------------------

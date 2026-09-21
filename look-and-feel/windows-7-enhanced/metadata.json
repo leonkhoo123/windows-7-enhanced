@@ -1,0 +1,28 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "",
+                "Name": "Leon Khoo (enhanced edition)"
+            },
+            {
+                "Email": "",
+                "Name": "Blackcrack / Blackysgate.de (original icon theme)"
+            }
+        ],
+        "Category": "Plasma Look And Feel",
+        "Description": "Windows 7 Enhanced - Windows 7 style icons, colors and desktop layout. Enhanced edition based on the original Plasma SVG Win7 theme by Blackcrack (Blackysgate.de).",
+        "EnabledByDefault": true,
+        "Id": "windows-7-enhanced",
+        "License": "CC-BY-NC-SA-4.0",
+        "Name": "Windows 7 Enhanced",
+        "ServiceTypes": [
+            "Plasma/LookAndFeel"
+        ],
+        "Version": "1.0",
+        "Website": "https://github.com/leonkhoo123/windows-7-enhanced"
+    },
+    "Keywords": "Desktop;Workspace;Appearance;Look and Feel;",
+    "X-Plasma-APIVersion": "2"
+}

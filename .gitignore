@@ -1,0 +1,15 @@
+# Local build / development artifacts
+_backup/
+*.orig
+icon-theme.cache
+*.tar.gz
+*.tgz
+
+# Editor / OS cruft
+.DS_Store
+*~
+*.swp
+
+# Local build output
+/dist/
+/build/
