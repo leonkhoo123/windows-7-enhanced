@@ -12,15 +12,17 @@ Enhanced edition by **Leon Khoo**, based on the original
 | Component | Path | License |
 |-----------|------|---------|
 | Icon theme | `icons/windows-7-enhanced/` | CC BY-NC-SA |
-| Global theme (look-and-feel) | `look-and-feel/windows-7-enhanced/` | CC BY-NC-SA |
-| Color scheme | `color-schemes/Windows7Enhanced.colors` | CC BY-NC-SA |
+| Global theme (look-and-feel) | `look-and-feel/windows-7-enhanced/` | GPL-3.0-or-later |
+| Color scheme | `color-schemes/Windows7Enhanced.colors` | GPL-3.0-or-later |
 | Plasma theme *(fork of ExposeAir)* | `plasma/desktoptheme/windows-7-enhanced/` | GPL-3.0-or-later |
 | Window decoration *(fork of ExposeAir)* | `aurorae/themes/windows-7-enhanced/` | GPL-3.0-or-later |
 | Splash *(fork of windows7splash)* | `look-and-feel/windows-7-enhanced-splash/` | GPL-3.0-or-later |
 | Kvantum theme *(fork of ExposeAir)* | `kvantum/windows-7-enhanced/` | GPL-3.0-or-later |
 | Aero color scheme *(fork of ExposeAir)* | `color-schemes/Windows7EnhancedAero.colors` | GPL |
 
-See [`LICENSES.md`](LICENSES.md) for the full audit.
+See [`LICENSES.md`](LICENSES.md) for the full audit. Only the **icon theme** is
+non-open (CC BY-NC-SA, inherited from the original); everything else is
+GPL-3.0-or-later.
 
 ## Install
 

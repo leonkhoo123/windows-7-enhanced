@@ -11,12 +11,16 @@
  install script and further icon refinements, while keeping the original
  authorship and license intact.
 
- Project components (CC BY-NC-SA)
- --------------------------------
+ Icon theme (CC BY-NC-SA)
+ ------------------------
    icons/windows-7-enhanced           icon theme (original artwork by
                                       Blackcrack / Blackysgate.de)
+
+ Project additions (GPL-3.0-or-later)
+ ------------------------------------
    look-and-feel/windows-7-enhanced   Plasma global theme (look-and-feel)
    color-schemes/Windows7Enhanced     Windows 7 Aero color scheme
+   install.sh, docs                   installer and documentation
 
  Forked Aero components (GPL-3.0-or-later)
  -----------------------------------------
@@ -40,6 +44,6 @@
  Excluded (no clear open license): "Win7Bulid-cursors" cursor theme and the
  original pack's wallpaper images. See LICENSES.md.
 
- License summary: project files CC BY-NC-SA; forked components GPL-3.0-or-later.
- See COPYING and LICENSES.md.
+ License summary: icon theme CC BY-NC-SA (non-open); all other project files
+ and the forked Aero components GPL-3.0-or-later. See COPYING and LICENSES.md.
  ------------------------------------------------------------------------

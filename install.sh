@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: GPL-3.0-or-later
 # ==============================================================================
 # Script Name: install.sh
 # Description: Installs the "Windows 7 Enhanced" theme pack for the current

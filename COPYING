@@ -1,18 +1,31 @@
  Windows 7 Enhanced - KDE theme pack
  ==============================================================================
- License: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
-          https://creativecommons.org/licenses/by-nc-sa/4.0/
 
- You are free to share and adapt this pack for non-commercial purposes, as long
- as you give appropriate credit and distribute your contributions under the
- same license.
+ Icon theme - original work "Plasma SVG Win7 Theme" by Blackcrack (Blackysgate.de)
+ --------------------------------------------------------------------------------
+ Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+ https://creativecommons.org/licenses/by-nc-sa/4.0/
 
- Original work : "Plasma SVG Win7 Theme" by Blackcrack (Blackysgate.de)
-                 https://www.blackysgate.de
- Changes       : "Windows 7 Enhanced" edition by Leon Khoo - icons enhanced,
-                 color scheme and Plasma global theme added, metadata updated.
+ You are free to share and adapt the icon theme for non-commercial purposes,
+ as long as you give appropriate credit and distribute your contributions
+ under the same license.
 
- Third-party icons bundled in the icon theme keep their own copyright.
- Third-party themes referenced by the global theme keep their own licenses
- and are not covered by this license. See LICENSES.md.
- ------------------------------------------------------------------------
+ Copyright of the original icon theme and its bundled third-party artwork
+ remains with their respective authors.
+
+ --------------------------------------------------------------------------------
+ All other project files - GPL-3.0-or-later
+ --------------------------------------------------------------------------------
+ The Windows 7 Enhanced edition additions - the Plasma global theme
+ (look-and-feel/windows-7-enhanced/), the color scheme
+ (color-schemes/Windows7Enhanced.colors), install.sh and the documentation -
+ are Copyright (C) 2026 Leon Khoo and licensed under the GNU General Public
+ License, version 3 or (at your option) any later version.
+ Full text: LICENSES/GPL-3.0.txt.
+
+ The forked Aero components (plasma/, aurorae/, the splash and the forked
+ color scheme) are forks of GPL works and keep their own GPL-3.0-or-later
+ license, with the original authors credited.
+
+ See LICENSES.md for the complete audit.
+ --------------------------------------------------------------------------------
