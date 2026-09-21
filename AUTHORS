@@ -11,18 +11,18 @@
  install script and further icon refinements, while keeping the original
  authorship and license intact.
 
- Components in this pack
- -----------------------
+ Components in this pack (CC BY-NC-SA)
+ -------------------------------------
    icons/windows-7-enhanced           icon theme (original artwork by
                                       Blackcrack / Blackysgate.de)
    color-schemes/Windows7Enhanced     Windows 7 Aero color scheme
    look-and-feel/windows-7-enhanced   Plasma global theme (look-and-feel)
-   kvantum/windows-7-enhnaced         Kvantum widget theme
 
  Bundled third-party components (GPL, aggregated - not CC BY-NC-SA)
  ------------------------------------------------------------------
    ExposeAir Plasma theme + Aurorae decoration + color scheme
                                       Mark Whittaker (GPL)
+   kvantum/windows-7-enhnaced         Kvantum widget theme (GPL-3.0)
    windows7splash                     luis-pseudo / AudacityXD62 (GPL)
    (Kvantum engine itself is not bundled - install the kvantum package)
 

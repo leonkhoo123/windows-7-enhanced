@@ -31,5 +31,8 @@ the pack and are **not** covered by the pack's CC BY-NC-SA license.
 
 **Not bundled.** `widgetStyle=kvantum` requires the Kvantum package
 (GPL-3.0-or-later) to be installed by the user. Only Kvantum *themes* ship here.
-The pack's own Kvantum theme lives in `../kvantum/windows-7-enhnaced/` and is
-part of this project (CC BY-NC-SA).
+
+## Kvantum theme `windows-7-enhnaced`
+
+- **Path:** `../../kvantum/windows-7-enhnaced/`
+- **License:** GPL-3.0 (per its `LICENSE` file)

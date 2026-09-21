@@ -18,7 +18,6 @@ original icon theme. See `COPYING`.
 | Icon theme | `icons/windows-7-enhanced/` | Blackcrack / Blackysgate.de (original) |
 | Color scheme | `color-schemes/Windows7Enhanced.colors` | Leon Khoo |
 | Plasma global theme | `look-and-feel/windows-7-enhanced/` | Leon Khoo |
-| Kvantum theme | `kvantum/windows-7-enhnaced/` | Leon Khoo |
 
 > **Note on "open":** CC BY-NC-SA is an open *content* license, but the
 > **NonCommercial** clause means it is **not** OSI-approved open source and not
@@ -43,6 +42,7 @@ Aggregated with the pack; **not** covered by CC BY-NC-SA. Full details in
 | ExposeAir Aurorae decoration | `third-party/exposeair/aurorae/themes/exposeair/` | Mark Whittaker | GPL (LICENSE: GPL-3.0) |
 | ExposeAir color scheme | `third-party/exposeair/color-schemes/ExposeAir.colors` | Mark Whittaker | GPL |
 | ExposeAir Kvantum theme | `third-party/exposeair/kvantum/ExposeAir/` | Mark Whittaker | GPL |
+| Kvantum theme `windows-7-enhnaced` | `kvantum/windows-7-enhnaced/` | see LICENSE | GPL-3.0 (LICENSE file) |
 | windows7splash | `third-party/windows7splash/plasma/look-and-feel/windows7splash/` | luis-pseudo / AudacityXD62 | GPL |
 
 **Modification:** `windows7splash`'s `contents/splash/tahoma.ttf` (proprietary
