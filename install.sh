@@ -2,11 +2,9 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 # ==============================================================================
 # Script Name: install.sh
-# Description: Installs the "Windows 7 Enhanced" theme pack for the current
-#              user.  The pack contains the project's own components plus the
-#              forked Aero components (based on ExposeAir / windows7splash):
+# Description: Installs the "Windows 7 Enhanced" Plasma theme pack (all GPL)
+#              for the current user:
 #
-#                icons/windows-7-enhanced            -> <icons>
 #                color-schemes/*.colors              -> <color-schemes>
 #                look-and-feel/windows-7-enhanced    -> <plasma/look-and-feel>
 #                look-and-feel/windows-7-enhanced-splash
@@ -16,13 +14,16 @@
 #                aurorae/themes/windows-7-enhanced   -> <aurorae/themes>
 #                kvantum/windows-7-enhanced          -> <config>/Kvantum
 #
+#              The Windows 7 icon theme is a SEPARATE package (CC BY-NC-SA)
+#              and is not installed here. Get it from the
+#              "windows-7-enhanced-icons" repo if you want the icons too.
+#
 #              All destinations are resolved from the environment
 #              (XDG_DATA_HOME / XDG_CONFIG_HOME, falling back to
 #              $HOME/.local/share and $HOME/.config), so nothing is hardcoded
 #              to a specific user.
 #
-# Theme       : Windows 7 Enhanced
-# Original    : "Plasma SVG Win7 Theme" by Blackcrack (Blackysgate.de)
+# Theme       : Windows 7 Enhanced (Plasma components)
 # Enhanced by : Leon Khoo
 #
 # Usage:
@@ -39,7 +40,6 @@ SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 DATA_HOME="${XDG_DATA_HOME:-$HOME/.local/share}"
 CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
 
-DEST_ICONS="${DATA_HOME}/icons/windows-7-enhanced"
 DEST_COLORS="${DATA_HOME}/color-schemes"
 DEST_LNF="${DATA_HOME}/plasma/look-and-feel/windows-7-enhanced"
 DEST_SPLASH="${DATA_HOME}/plasma/look-and-feel/windows-7-enhanced-splash"
@@ -55,7 +55,7 @@ die()  { printf '\033[1;31merror:\033[0m %s\n' "$*" >&2; exit 1; }
 
 usage() {
     cat <<EOF
-Installs the "Windows 7 Enhanced" theme pack for the current user.
+Installs the "Windows 7 Enhanced" Plasma theme pack for the current user.
 
 Usage:
   $(basename "${BASH_SOURCE[0]}")              install / update the pack
@@ -63,12 +63,13 @@ Usage:
   $(basename "${BASH_SOURCE[0]}") --uninstall  remove the installed pack
   $(basename "${BASH_SOURCE[0]}") --help       show this help
 
+Note: the icon theme is a separate package (windows-7-enhanced-icons).
+
 Destination root: \${XDG_DATA_HOME:-\$HOME/.local/share} and
                   \${XDG_CONFIG_HOME:-\$HOME/.config}
 EOF
 }
 
-# Copy a directory tree, preserving symlinks and file modes.
 copy_tree() {
     local src="$1" dst="$2"
     [ -d "$src" ] || die "Source directory not found: $src"
@@ -82,9 +83,6 @@ remove_path() {
 }
 
 refresh_caches() {
-    [ -d "${DEST_ICONS}" ] && command -v gtk-update-icon-cache >/dev/null 2>&1 \
-        && gtk-update-icon-cache -q -t -f "${DEST_ICONS}" 2>/dev/null || true
-    command -v xdg-icon-resource >/dev/null 2>&1 && xdg-icon-resource forceupdate 2>/dev/null || true
     if command -v kbuildsycoca6 >/dev/null 2>&1; then
         kbuildsycoca6 --noincremental >/dev/null 2>&1 || true
     elif command -v kbuildsycoca5 >/dev/null 2>&1; then
@@ -113,9 +111,6 @@ install_pack() {
     info "Source      : ${SCRIPT_DIR}"
     info "Destination : ${DATA_HOME} (data) + ${CONFIG_HOME} (config)"
 
-    info "Installing icon theme     -> ${DEST_ICONS}"
-    copy_tree "${SCRIPT_DIR}/icons/windows-7-enhanced" "${DEST_ICONS}"
-
     info "Installing color schemes  -> ${DEST_COLORS}"
     mkdir -p -- "${DEST_COLORS}"
     cp -f "${SCRIPT_DIR}"/color-schemes/*.colors "${DEST_COLORS}/"
@@ -142,11 +137,11 @@ install_pack() {
     info "Installed successfully."
     echo "    Then select it in: System Settings -> Appearance -> Global Theme"
     echo "    -> Windows 7 Enhanced"
+    echo "    For the icons, also install the separate 'windows-7-enhanced-icons' pack."
 }
 
 uninstall_pack() {
     for path in \
-        "${DEST_ICONS}" \
         "${DEST_LNF}" \
         "${DEST_SPLASH}" \
         "${DEST_DESKTOPTHEME}" \

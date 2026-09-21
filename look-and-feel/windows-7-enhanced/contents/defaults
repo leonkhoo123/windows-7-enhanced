@@ -6,6 +6,8 @@
 [kdeglobals][General]
 ColorScheme=Windows7Enhanced
 
+# Icons are a SEPARATE package (repo: windows-7-enhanced-icons, CC BY-NC-SA).
+# If it is installed this selects it; otherwise KDE falls back to its default.
 [kdeglobals][Icons]
 Theme=windows-7-enhanced
 
