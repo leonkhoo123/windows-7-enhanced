@@ -2,26 +2,12 @@
 
 A KDE Plasma theme pack that brings a Windows 7 look to Linux: an Aero color
 scheme, a Plasma global theme, and forked Aero components (Plasma theme,
-window decoration, splash, Kvantum theme). **All GPL-3.0-or-later.**
+window decoration, splash, Kvantum theme).
 
-> The **Windows 7 icon theme** is a **separate package** with a
-> non-commercial license (CC BY-NC-SA). It lives in its own repo —
-> **`windows-7-enhanced-icons`** — and is not bundled here. Install it
-> alongside this pack if you want the icons.
-
-## Components
-
-| Component | Path | License |
-|-----------|------|---------|
-| Global theme (look-and-feel) | `look-and-feel/windows-7-enhanced/` | GPL-3.0-or-later |
-| Color scheme | `color-schemes/Windows7Enhanced.colors` | GPL-3.0-or-later |
-| Plasma theme *(fork of ExposeAir)* | `plasma/desktoptheme/windows-7-enhanced/` | GPL-3.0-or-later |
-| Window decoration *(fork of ExposeAir)* | `aurorae/themes/windows-7-enhanced/` | GPL-3.0-or-later |
-| Splash *(fork of windows7splash)* | `look-and-feel/windows-7-enhanced-splash/` | GPL-3.0-or-later |
-| Kvantum theme *(fork of ExposeAir)* | `kvantum/windows-7-enhanced/` | GPL-3.0-or-later |
-| Aero color scheme *(fork of ExposeAir)* | `color-schemes/Windows7EnhancedAero.colors` | GPL-3.0-or-later |
-
-See [`LICENSES.md`](LICENSES.md) for the full audit.
+> The **Windows 7 icon theme** is a **separate package** and is not bundled
+> here. It lives in its own repo —
+> [**`windows-7-enhanced-icons`**](https://github.com/leonkhoo123/windows-7-enhanced-icons)
+> — install it alongside this pack if you want the icons.
 
 ## Install
 
@@ -61,6 +47,20 @@ application, not a theme, so it is not bundled):
 
 Then in **Kvantum Manager**, select the **`windows-7-enhanced`** theme.
 
+## Components
+
+All components are **GPL-3.0-or-later**.
+
+| Component | Path |
+|-----------|------|
+| Global theme (look-and-feel) | `look-and-feel/windows-7-enhanced/` |
+| Color scheme | `color-schemes/Windows7Enhanced.colors` |
+| Plasma theme *(fork of ExposeAir)* | `plasma/desktoptheme/windows-7-enhanced/` |
+| Window decoration *(fork of ExposeAir)* | `aurorae/themes/windows-7-enhanced/` |
+| Splash *(fork of windows7splash)* | `look-and-feel/windows-7-enhanced-splash/` |
+| Kvantum theme *(fork of ExposeAir)* | `kvantum/windows-7-enhanced/` |
+| Aero color scheme *(fork of ExposeAir)* | `color-schemes/Windows7EnhancedAero.colors` |
+
 ## Credits
 
 * **ExposeAir** — Plasma theme, window decoration, Kvantum theme and color
@@ -69,9 +69,9 @@ Then in **Kvantum Manager**, select the **`windows-7-enhanced`** theme.
 * **windows7splash** — by **luis-pseudo**, original by **AudacityXD62**, GPL —
   forked and adapted here
 * Windows 7 Enhanced edition and global theme — **Leon Khoo**
-* Icon theme (separate repo) — **Blackcrack / Blackysgate.de** (CC BY-NC-SA)
 
 ## License
 
 **GPL-3.0-or-later** — see [`COPYING`](COPYING) and the full text in
-[`LICENSES/GPL-3.0.txt`](LICENSES/GPL-3.0.txt).
+[`LICENSES/GPL-3.0.txt`](LICENSES/GPL-3.0.txt). See [`LICENSES.md`](LICENSES.md)
+for the full license audit.
