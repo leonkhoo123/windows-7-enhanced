@@ -5,13 +5,17 @@
 #cursorTheme=Win7Bulid-cursors
 
 [kdeglobals][General]
-ColorScheme=Windows7Enhanced
+ColorScheme=ExposeAir
 
 [kdeglobals][Icons]
 Theme=windows-7-enhanced
 
 [kdeglobals][KDE]
 widgetStyle=kvantum
+
+[ksplashrc][KSplash]
+Engine=KSplashQML
+Theme=windows7splash
 
 [kwinrc][DesktopSwitcher]
 LayoutName=org.kde.breeze.desktop
