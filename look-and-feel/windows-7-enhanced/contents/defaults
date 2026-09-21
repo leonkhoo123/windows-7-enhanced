@@ -1,11 +1,10 @@
-# Cursor theme is intentionally not set: "Win7Bulid-cursors" (used by the
-# original setup) has no clear open license. Install an open cursor theme and
+# Cursor theme is intentionally not set. Install an open cursor theme and
 # uncomment the two lines below if you want one.
 #[kcminputrc][Mouse]
-#cursorTheme=Win7Bulid-cursors
+#cursorTheme=
 
 [kdeglobals][General]
-ColorScheme=ExposeAir
+ColorScheme=Windows7Enhanced
 
 [kdeglobals][Icons]
 Theme=windows-7-enhanced
@@ -15,7 +14,7 @@ widgetStyle=kvantum
 
 [ksplashrc][KSplash]
 Engine=KSplashQML
-Theme=windows7splash
+Theme=windows-7-enhanced-splash
 
 [kwinrc][DesktopSwitcher]
 LayoutName=org.kde.breeze.desktop
@@ -25,7 +24,7 @@ LayoutName=thumbnail_grid
 
 [kwinrc][org.kde.kdecoration2]
 library=org.kde.kwin.aurorae.v2
-theme=__aurorae__svg__exposeair
+theme=__aurorae__svg__windows-7-enhanced
 
 [plasmarc][Theme]
-name=exposeair
+name=windows-7-enhanced

@@ -1,35 +1,26 @@
 # Windows 7 Enhanced
 
 A self-contained KDE Plasma theme pack that brings a Windows 7 look to Linux:
-scalable Windows 7 icons, an Aero color scheme, and a Plasma global theme —
-**bundling the third-party themes it depends on**, so it works out of the box.
+scalable Windows 7 icons, an Aero color scheme, and a Plasma global theme,
+plus forked Aero components (Plasma theme, window decoration, splash).
 
 Enhanced edition by **Leon Khoo**, based on the original
 *Plasma SVG Win7 Theme* by **Blackcrack / [Blackysgate.de](https://www.blackysgate.de)**.
 
-## What's included
+## Components
 
-### Project components — CC BY-NC-SA
-| Component | Path | Installs to |
-|-----------|------|-------------|
-| Icon theme | `icons/windows-7-enhanced/` | `~/.local/share/icons/` |
-| Color scheme | `color-schemes/Windows7Enhanced.colors` | `~/.local/share/color-schemes/` |
-| Global theme | `look-and-feel/windows-7-enhanced/` | `~/.local/share/plasma/look-and-feel/` |
+| Component | Path | License |
+|-----------|------|---------|
+| Icon theme | `icons/windows-7-enhanced/` | CC BY-NC-SA |
+| Global theme (look-and-feel) | `look-and-feel/windows-7-enhanced/` | CC BY-NC-SA |
+| Color scheme | `color-schemes/Windows7Enhanced.colors` | CC BY-NC-SA |
+| Plasma theme *(fork of ExposeAir)* | `plasma/desktoptheme/windows-7-enhanced/` | GPL-3.0-or-later |
+| Window decoration *(fork of ExposeAir)* | `aurorae/themes/windows-7-enhanced/` | GPL-3.0-or-later |
+| Splash *(fork of windows7splash)* | `look-and-feel/windows-7-enhanced-splash/` | GPL-3.0-or-later |
+| Kvantum theme *(fork of ExposeAir)* | `kvantum/windows-7-enhanced/` | GPL-3.0-or-later |
+| Aero color scheme *(fork of ExposeAir)* | `color-schemes/Windows7EnhancedAero.colors` | GPL |
 
-### Bundled third-party — GPL, see [`third-party/NOTICE.md`](third-party/NOTICE.md)
-| Component | Path | Installs to |
-|-----------|------|-------------|
-| **ExposeAir** Plasma theme | `third-party/exposeair/plasma/desktoptheme/exposeair/` | `~/.local/share/plasma/desktoptheme/exposeair/` |
-| **ExposeAir** Aurorae decoration | `third-party/exposeair/aurorae/themes/exposeair/` | `~/.local/share/aurorae/themes/exposeair/` |
-| **ExposeAir** color scheme | `third-party/exposeair/color-schemes/ExposeAir.colors` | `~/.local/share/color-schemes/ExposeAir.colors` |
-| **ExposeAir** Kvantum theme | `third-party/exposeair/kvantum/ExposeAir/` | `~/.config/Kvantum/ExposeAir/` |
-| **windows7splash** splash | `third-party/windows7splash/` | `~/.local/share/plasma/look-and-feel/windows7splash/` |
-| **Kvantum** theme `windows-7-enhanced` (modified from ExposeAir, GPL-3.0) | `kvantum/windows-7-enhanced/` | `~/.config/Kvantum/windows-7-enhanced/` |
-
-The project files are **CC BY-NC-SA 4.0**
-([license](https://creativecommons.org/licenses/by-nc-sa/4.0/)); the bundled
-third-party themes stay under their own **GPL** licenses. See
-[`LICENSES.md`](LICENSES.md) for the full audit.
+See [`LICENSES.md`](LICENSES.md) for the full audit.
 
 ## Install
 
@@ -45,8 +36,8 @@ Nothing is hardcoded to a user: everything goes under `$XDG_DATA_HOME` /
 
 ## Kvantum engine (install separately)
 
-The pack sets `widgetStyle=kvantum`, which needs the **Kvantum engine**. It is
-an application, not a theme, so it is not bundled — install it with your distro:
+The pack sets `widgetStyle=kvantum`, which needs the **Kvantum engine** (an
+application, not a theme, so it is not bundled):
 
 | Distro | Command |
 |--------|---------|
@@ -55,19 +46,21 @@ an application, not a theme, so it is not bundled — install it with your distr
 | Ubuntu / Debian | `sudo apt install kvantum-manager` |
 | openSUSE Tumbleweed | `sudo zypper install kvantum-manager kvantum-qt6` |
 
-Then in **Kvantum Manager**, select the **`windows-7-enhanced`** theme
-(bundled by this pack into `~/.config/Kvantum/`).
+Then in **Kvantum Manager**, select the **`windows-7-enhanced`** theme.
 
 ## Notes
 
-- **Windows 7 cursors** are not included: the original `Win7Bulid-cursors` has
-  no clear open license. See `LICENSES.md`.
-- `windows7splash` was bundled **without** its proprietary `tahoma.ttf`.
+- **Windows 7 cursors** are not included (the original `Win7Bulid-cursors` has
+  no clear open license).
+- The splash is bundled **without** the proprietary `tahoma.ttf`.
 
 ## Credits
 
-* Original icon theme: **Blackcrack / Blackysgate.de** (CC BY-NC-SA)
-* Enhanced edition, color scheme and global theme: **Leon Khoo**
-* Bundled themes: **Mark Whittaker** (ExposeAir), **luis-pseudo** /
-  **AudacityXD62** (windows7splash)
+* Original icon theme — **Blackcrack / Blackysgate.de** (CC BY-NC-SA)
+* **ExposeAir** — Plasma theme, window decoration, Kvantum theme and color
+  scheme by **Mark Whittaker (Phobian347)**, <https://www.pling.com/u/phob1an/>
+  (GPL) — forked and adapted here
+* **windows7splash** — by **luis-pseudo**, original by **AudacityXD62**, GPL —
+  forked and adapted here
+* Windows 7 Enhanced edition, global theme and forks — **Leon Khoo**
 * Original author's technical notes: [`docs/Readme-original-Blackcrack.md`](docs/Readme-original-Blackcrack.md)

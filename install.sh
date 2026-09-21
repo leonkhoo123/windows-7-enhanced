@@ -3,17 +3,17 @@
 # Script Name: install.sh
 # Description: Installs the "Windows 7 Enhanced" theme pack for the current
 #              user.  The pack contains the project's own components plus the
-#              bundled third-party themes it depends on:
+#              forked Aero components (based on ExposeAir / windows7splash):
 #
-#                icons/windows-7-enhanced              -> <icons>
-#                color-schemes/*.colors                -> <color-schemes>
-#                look-and-feel/windows-7-enhanced      -> <plasma/look-and-feel>
-#                kvantum/windows-7-enhanced            -> <config>/Kvantum
-#
-#                third-party/exposeair/...             -> exposeair plasma theme,
-#                                                         Aurorae decoration,
-#                                                         color scheme, Kvantum theme
-#                third-party/windows7splash/...        -> windows7splash
+#                icons/windows-7-enhanced            -> <icons>
+#                color-schemes/*.colors              -> <color-schemes>
+#                look-and-feel/windows-7-enhanced    -> <plasma/look-and-feel>
+#                look-and-feel/windows-7-enhanced-splash
+#                                                    -> <plasma/look-and-feel>
+#                plasma/desktoptheme/windows-7-enhanced
+#                                                    -> <plasma/desktoptheme>
+#                aurorae/themes/windows-7-enhanced   -> <aurorae/themes>
+#                kvantum/windows-7-enhanced          -> <config>/Kvantum
 #
 #              All destinations are resolved from the environment
 #              (XDG_DATA_HOME / XDG_CONFIG_HOME, falling back to
@@ -38,17 +38,13 @@ SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 DATA_HOME="${XDG_DATA_HOME:-$HOME/.local/share}"
 CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
 
-# project components
 DEST_ICONS="${DATA_HOME}/icons/windows-7-enhanced"
 DEST_COLORS="${DATA_HOME}/color-schemes"
 DEST_LNF="${DATA_HOME}/plasma/look-and-feel/windows-7-enhanced"
-DEST_KVANTUM_WIN7="${CONFIG_HOME}/Kvantum/windows-7-enhanced"
-
-# bundled third-party components
-DEST_DESKTOPTHEME="${DATA_HOME}/plasma/desktoptheme/exposeair"
-DEST_AURORAE="${DATA_HOME}/aurorae/themes/exposeair"
-DEST_KVANTUM_EXPOSE="${CONFIG_HOME}/Kvantum/ExposeAir"
-DEST_SPLASH="${DATA_HOME}/plasma/look-and-feel/windows7splash"
+DEST_SPLASH="${DATA_HOME}/plasma/look-and-feel/windows-7-enhanced-splash"
+DEST_DESKTOPTHEME="${DATA_HOME}/plasma/desktoptheme/windows-7-enhanced"
+DEST_AURORAE="${DATA_HOME}/aurorae/themes/windows-7-enhanced"
+DEST_KVANTUM="${CONFIG_HOME}/Kvantum/windows-7-enhanced"
 
 # ------------------------------------------------------------------ helpers ---
 
@@ -116,36 +112,28 @@ install_pack() {
     info "Source      : ${SCRIPT_DIR}"
     info "Destination : ${DATA_HOME} (data) + ${CONFIG_HOME} (config)"
 
-    # --- project components ---
-    info "Installing icon theme   -> ${DEST_ICONS}"
+    info "Installing icon theme     -> ${DEST_ICONS}"
     copy_tree "${SCRIPT_DIR}/icons/windows-7-enhanced" "${DEST_ICONS}"
 
-    info "Installing color scheme -> ${DEST_COLORS}"
+    info "Installing color schemes  -> ${DEST_COLORS}"
     mkdir -p -- "${DEST_COLORS}"
     cp -f "${SCRIPT_DIR}"/color-schemes/*.colors "${DEST_COLORS}/"
 
-    info "Installing look-and-feel -> ${DEST_LNF}"
+    info "Installing look-and-feel  -> ${DEST_LNF}"
     copy_tree "${SCRIPT_DIR}/look-and-feel/windows-7-enhanced" "${DEST_LNF}"
 
-    info "Installing Kvantum theme -> ${DEST_KVANTUM_WIN7}"
+    info "Installing splash         -> ${DEST_SPLASH}"
+    copy_tree "${SCRIPT_DIR}/look-and-feel/windows-7-enhanced-splash" "${DEST_SPLASH}"
+
+    info "Installing Plasma theme   -> ${DEST_DESKTOPTHEME}"
+    copy_tree "${SCRIPT_DIR}/plasma/desktoptheme/windows-7-enhanced" "${DEST_DESKTOPTHEME}"
+
+    info "Installing window decor.  -> ${DEST_AURORAE}"
+    copy_tree "${SCRIPT_DIR}/aurorae/themes/windows-7-enhanced" "${DEST_AURORAE}"
+
+    info "Installing Kvantum theme  -> ${DEST_KVANTUM}"
     mkdir -p -- "${CONFIG_HOME}/Kvantum"
-    copy_tree "${SCRIPT_DIR}/kvantum/windows-7-enhanced" "${DEST_KVANTUM_WIN7}"
-
-    # --- bundled third-party components (GPL, see third-party/NOTICE.md) ---
-    info "Installing ExposeAir Plasma theme -> ${DEST_DESKTOPTHEME}"
-    copy_tree "${SCRIPT_DIR}/third-party/exposeair/plasma/desktoptheme/exposeair" "${DEST_DESKTOPTHEME}"
-
-    info "Installing ExposeAir Aurorae decoration -> ${DEST_AURORAE}"
-    copy_tree "${SCRIPT_DIR}/third-party/exposeair/aurorae/themes/exposeair" "${DEST_AURORAE}"
-
-    info "Installing ExposeAir color scheme -> ${DEST_COLORS}/ExposeAir.colors"
-    cp -f "${SCRIPT_DIR}/third-party/exposeair/color-schemes/ExposeAir.colors" "${DEST_COLORS}/"
-
-    info "Installing ExposeAir Kvantum theme -> ${DEST_KVANTUM_EXPOSE}"
-    copy_tree "${SCRIPT_DIR}/third-party/exposeair/kvantum/ExposeAir" "${DEST_KVANTUM_EXPOSE}"
-
-    info "Installing Windows 7 splash -> ${DEST_SPLASH}"
-    copy_tree "${SCRIPT_DIR}/third-party/windows7splash/plasma/look-and-feel/windows7splash" "${DEST_SPLASH}"
+    copy_tree "${SCRIPT_DIR}/kvantum/windows-7-enhanced" "${DEST_KVANTUM}"
 
     refresh_caches
 
@@ -162,12 +150,11 @@ uninstall_pack() {
         "${DEST_SPLASH}" \
         "${DEST_DESKTOPTHEME}" \
         "${DEST_AURORAE}" \
-        "${DEST_KVANTUM_EXPOSE}" \
-        "${DEST_KVANTUM_WIN7}"; do
+        "${DEST_KVANTUM}"; do
         remove_path "$path"
     done
-    remove_path "${DEST_COLORS}/ExposeAir.colors"
     remove_path "${DEST_COLORS}/Windows7Enhanced.colors"
+    remove_path "${DEST_COLORS}/Windows7EnhancedAero.colors"
     refresh_caches
     info "Uninstalled."
 }

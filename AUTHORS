@@ -6,32 +6,40 @@
  Enhanced by : Leon Khoo
  Based on    : "Plasma SVG Win7 Theme" by Blackcrack / Blackysgate.de
 
- The original theme and its artwork remain the work of the original
+ The original icon theme and its artwork remain the work of the original
  author. This enhanced edition adds touched-up metadata, a user-level
  install script and further icon refinements, while keeping the original
  authorship and license intact.
 
- Components in this pack (CC BY-NC-SA)
- -------------------------------------
+ Project components (CC BY-NC-SA)
+ --------------------------------
    icons/windows-7-enhanced           icon theme (original artwork by
                                       Blackcrack / Blackysgate.de)
-   color-schemes/Windows7Enhanced     Windows 7 Aero color scheme
    look-and-feel/windows-7-enhanced   Plasma global theme (look-and-feel)
+   color-schemes/Windows7Enhanced     Windows 7 Aero color scheme
 
- Bundled third-party components (GPL, aggregated - not CC BY-NC-SA)
- ------------------------------------------------------------------
-   ExposeAir Plasma theme + Aurorae decoration + color scheme
-                                      Mark Whittaker (GPL)
-   kvantum/windows-7-enhanced         Kvantum widget theme, modified from
-                                      ExposeAir (GPL-3.0)
-   windows7splash                     luis-pseudo / AudacityXD62 (GPL)
-   (Kvantum engine itself is not bundled - install the kvantum package)
+ Forked Aero components (GPL-3.0-or-later)
+ -----------------------------------------
+ These are adapted forks of third-party themes, renamed into the
+ windows-7-enhanced namespace. Original authors are credited.
 
+   plasma/desktoptheme/windows-7-enhanced      Plasma theme
+                                               (fork of ExposeAir by
+                                               Mark Whittaker / Phobian347)
+   aurorae/themes/windows-7-enhanced           window decoration
+                                               (fork of ExposeAir)
+   kvantum/windows-7-enhanced                  Kvantum theme
+                                               (fork of ExposeAir's)
+   look-and-feel/windows-7-enhanced-splash     splash
+                                               (fork of windows7splash by
+                                               luis-pseudo / AudacityXD62)
+   color-schemes/Windows7EnhancedAero          color scheme
+                                               (fork of ExposeAir's)
+
+ Not bundled: the Kvantum engine (install the `kvantum` package).
  Excluded (no clear open license): "Win7Bulid-cursors" cursor theme and the
  original pack's wallpaper images. See LICENSES.md.
 
- License summary: the project's own files (icon theme, color scheme, global
- theme, Kvantum theme) are CC BY-NC-SA, matching the original icon theme.
- Bundled third-party themes keep their own GPL licenses. See COPYING,
- LICENSES.md and third-party/NOTICE.md.
+ License summary: project files CC BY-NC-SA; forked components GPL-3.0-or-later.
+ See COPYING and LICENSES.md.
  ------------------------------------------------------------------------

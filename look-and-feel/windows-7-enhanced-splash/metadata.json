@@ -1,0 +1,27 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel/Splash",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "",
+                "Name": "Leon Khoo (Windows 7 Enhanced fork)"
+            },
+            {
+                "Email": "none",
+                "Name": "lpseudo (windows7splash port)"
+            },
+            {
+                "Email": "none",
+                "Name": "AudacityXD62 (original splash)"
+            }
+        ],
+        "Category": "",
+        "Description": "Classic Windows 7 welcome screen. Forked from windows7splash.",
+        "Id": "windows-7-enhanced-splash",
+        "License": "GPL-3.0-or-later",
+        "Name": "Windows 7 Enhanced Splash",
+        "Website": "https://github.com/leonkhoo123/windows-7-enhanced"
+    },
+    "Keywords": "Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;",
+    "X-Plasma-APIVersion": "2"
+}

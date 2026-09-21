@@ -1,0 +1,27 @@
+{
+    "KPackageStructure": "KWin/Aurorae",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "",
+                "Name": "Leon Khoo (Windows 7 Enhanced fork)"
+            },
+            {
+                "Email": "phobian@tutanota.com",
+                "Name": "Mark Whittaker (original ExposeAir)"
+            }
+        ],
+        "Category": "Plasma 6 Window Decorations",
+        "ServiceTypes": [
+            "KWin/Aurorae"
+        ],
+        "EnabledByDefault": true,
+        "Name": "Windows 7 Enhanced",
+        "Description": "Aero-style window decoration. Forked from ExposeAir by Mark Whittaker for the Windows 7 Enhanced pack.",
+        "Id": "windows-7-enhanced",
+        "Version": "6.1",
+        "License": "GPL-3.0-or-later",
+        "X-KPackage-Dependencies": [
+        ]
+    }
+}
