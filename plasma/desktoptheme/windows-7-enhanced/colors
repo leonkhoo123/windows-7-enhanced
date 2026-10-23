@@ -1,17 +1,3 @@
-[Colors:View]
-BackgroundAlternate=240,240,240
-BackgroundNormal=255,255,255
-DecorationFocus=51,153,255
-DecorationHover=81,173,255
-ForegroundActive=0,120,215
-ForegroundInactive=120,120,120
-ForegroundLink=0,102,204
-ForegroundNegative=204,0,0
-ForegroundNeutral=246,116,0
-ForegroundNormal=0,0,0
-ForegroundPositive=0,153,0
-ForegroundVisited=128,0,128
-
 [Colors:Window]
 ForegroundNormal=255,255,255
 ForegroundLink=144,192,255

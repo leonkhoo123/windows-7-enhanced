@@ -1,12 +1,7 @@
 # Licenses
 
-The **theme components** in this repository are **GPL-3.0-or-later**. The
-bundled **start-menu plasmoid** is **AGPL-3.0-or-later** (see
-[Bundled start menu](#bundled-start-menu--agpl-30-or-later) below).
-
-The GPL text is in [`LICENSES/GPL-3.0.txt`](LICENSES/GPL-3.0.txt); the AGPL text
-is in [`LICENSES/AGPL-3.0.txt`](LICENSES/AGPL-3.0.txt) and in the plasmoid's own
-[`LICENSE`](plasmoids/Windows7StartMenu4KDE/LICENSE).
+Everything in **this repository** is **GPL-3.0-or-later**. The full text is in
+[`LICENSES/GPL-3.0.txt`](LICENSES/GPL-3.0.txt).
 
 ## Project additions — GPL-3.0-or-later
 
@@ -32,21 +27,6 @@ adapted. They keep the **GPL** license and credit the original authors.
 **Modifications:** renamed package IDs, updated descriptions/metadata, and (for
 the splash) removed the proprietary `contents/splash/tahoma.ttf`. Original
 authors are credited in each `metadata.json` and in `README.md`.
-
-## Bundled start menu — AGPL-3.0-or-later
-
-| Component | Path | Based on |
-|-----------|------|----------|
-| Start menu | `plasmoids/Windows7StartMenu4KDE/` | [Windows7StartMenu4KDE](https://github.com/walterdemacedorodrigues/Windows7StartMenu4KDE) by walterdemacedorodrigues |
-
-This plasmoid is a **patched fork** of Windows7StartMenu4KDE 1.3.0. Modifications
-(2026-10-23, Leon Khoo): white application pane with black text, transparent
-right-hand side panel, white search box, Windows 7 orb by default, and adjusted
-default tints/opacity. See
-[`plasmoids/Windows7StartMenu4KDE/MODIFICATIONS.md`](plasmoids/Windows7StartMenu4KDE/MODIFICATIONS.md).
-The full AGPL text is in
-[`LICENSES/AGPL-3.0.txt`](LICENSES/AGPL-3.0.txt) and in the component's
-[`LICENSE`](plasmoids/Windows7StartMenu4KDE/LICENSE).
 
 ## Not in this repository
 

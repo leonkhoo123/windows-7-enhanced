@@ -56,27 +56,24 @@ var layout = {
             "applets": [
                 {
                     "config": {
+                        "/": {
+                            "popupHeight": "868",
+                            "popupWidth": "637"
+                        },
                         "/ConfigDialog": {
                             "DialogHeight": "630",
                             "DialogWidth": "810"
                         },
                         "/General": {
-                            "menuFrameUseThemeColor": "true",
-                            "menuFrameOpacity": "0",
-                            "listPanelUseThemeColor": "false",
-                            "listPanelColor": "#ffffff",
-                            "listPanelOpacity": "100",
-                            "sidePanelUseThemeColor": "false",
-                            "sidePanelColor": "#ffffff",
-                            "sidePanelOpacity": "0",
-                            "useWindowsOrb": "true",
-                            "numberRows": "4",
-                            "numberColumns": "6",
-                            "showRecentsView": "true",
-                            "numberRecentApps": "10"
+                            "alphaSort": "true",
+                            "compactMode": "true",
+                            "favoritesPortedToKAstats": "true",
+                            "paneSwap": "true",
+                            "switchCategoryOnHover": "true",
+                            "systemFavorites": "suspend\\,hibernate\\,reboot\\,shutdown"
                         }
                     },
-                    "plugin": "Windows7StartMenu4KDE"
+                    "plugin": "org.kde.plasma.kickoff"
                 },
                 {
                     "config": {

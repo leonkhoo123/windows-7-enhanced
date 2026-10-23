@@ -2,8 +2,8 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 # ==============================================================================
 # Script Name: install.sh
-# Description: Installs the "Windows 7 Enhanced" Plasma theme pack
-#              (GPL theme components + AGPL start menu) for the current user:
+# Description: Installs the "Windows 7 Enhanced" Plasma theme pack (all GPL)
+#              for the current user:
 #
 #                color-schemes/*.colors              -> <color-schemes>
 #                look-and-feel/windows-7-enhanced    -> <plasma/look-and-feel>
@@ -11,14 +11,8 @@
 #                                                    -> <plasma/look-and-feel>
 #                plasma/desktoptheme/windows-7-enhanced
 #                                                    -> <plasma/desktoptheme>
-#                plasmoids/Windows7StartMenu4KDE     -> <plasma/plasmoids>
 #                aurorae/themes/windows-7-enhanced   -> <aurorae/themes>
 #                kvantum/windows-7-enhanced          -> <config>/Kvantum
-#
-#              The same start-menu plasmoid is the default launcher in the
-#              look-and-feel layout. It is a patched fork of
-#              Windows7StartMenu4KDE and is AGPL-3.0-or-later; the rest of
-#              the pack is GPL-3.0-or-later.
 #
 #              The Windows 7 icon theme is a SEPARATE package (CC BY-NC-SA)
 #              and is not installed here. Get it from the
@@ -34,7 +28,7 @@
 #
 # Usage:
 #   ./install.sh              install / update the whole pack
-#   ./install.sh --apply      install, then apply the look-and-feel + panel layout
+#   ./install.sh --apply      install, then apply the look-and-feel
 #   ./install.sh --uninstall  remove the installed pack
 #   ./install.sh --help
 # ==============================================================================
@@ -50,7 +44,6 @@ DEST_COLORS="${DATA_HOME}/color-schemes"
 DEST_LNF="${DATA_HOME}/plasma/look-and-feel/windows-7-enhanced"
 DEST_SPLASH="${DATA_HOME}/plasma/look-and-feel/windows-7-enhanced-splash"
 DEST_DESKTOPTHEME="${DATA_HOME}/plasma/desktoptheme/windows-7-enhanced"
-DEST_PLASMOID="${DATA_HOME}/plasma/plasmoids/Windows7StartMenu4KDE"
 DEST_AURORAE="${DATA_HOME}/aurorae/themes/windows-7-enhanced"
 DEST_KVANTUM="${CONFIG_HOME}/Kvantum/windows-7-enhanced"
 
@@ -66,13 +59,11 @@ Installs the "Windows 7 Enhanced" Plasma theme pack for the current user.
 
 Usage:
   $(basename "${BASH_SOURCE[0]}")              install / update the pack
-  $(basename "${BASH_SOURCE[0]}") --apply      install, then apply the look-and-feel + panel layout
+  $(basename "${BASH_SOURCE[0]}") --apply      install, then apply the look-and-feel
   $(basename "${BASH_SOURCE[0]}") --uninstall  remove the installed pack
   $(basename "${BASH_SOURCE[0]}") --help       show this help
 
 Note: the icon theme is a separate package (windows-7-enhanced-icons).
-The bundled start menu (Windows7StartMenu4KDE fork) is AGPL-3.0-or-later;
-the theme components are GPL-3.0-or-later.
 
 Destination root: \${XDG_DATA_HOME:-\$HOME/.local/share} and
                   \${XDG_CONFIG_HOME:-\$HOME/.config}
@@ -116,8 +107,6 @@ apply_look_and_feel() {
 install_pack() {
     [ -f "${SCRIPT_DIR}/look-and-feel/windows-7-enhanced/metadata.json" ] \
         || die "Run this script from the root of the windows-7-enhanced repo."
-    [ -f "${SCRIPT_DIR}/plasmoids/Windows7StartMenu4KDE/metadata.json" ] \
-        || die "Start menu plasmoid not found in ${SCRIPT_DIR}/plasmoids."
 
     info "Source      : ${SCRIPT_DIR}"
     info "Destination : ${DATA_HOME} (data) + ${CONFIG_HOME} (config)"
@@ -135,9 +124,6 @@ install_pack() {
     info "Installing Plasma theme   -> ${DEST_DESKTOPTHEME}"
     copy_tree "${SCRIPT_DIR}/plasma/desktoptheme/windows-7-enhanced" "${DEST_DESKTOPTHEME}"
 
-    info "Installing start menu     -> ${DEST_PLASMOID}"
-    copy_tree "${SCRIPT_DIR}/plasmoids/Windows7StartMenu4KDE" "${DEST_PLASMOID}"
-
     info "Installing window decor.  -> ${DEST_AURORAE}"
     copy_tree "${SCRIPT_DIR}/aurorae/themes/windows-7-enhanced" "${DEST_AURORAE}"
 
@@ -151,18 +137,14 @@ install_pack() {
     info "Installed successfully."
     echo "    Then select it in: System Settings -> Appearance -> Global Theme"
     echo "    -> Windows 7 Enhanced"
-    echo "    The Windows 7 start menu is installed as 'Windows 7 Start Menu (Enhanced)'."
-    echo "    ./install.sh --apply also installs the matching panel layout."
     echo "    For the icons, also install the separate 'windows-7-enhanced-icons' pack."
 }
 
 uninstall_pack() {
-    warn "If the Windows 7 start menu is in a panel, switch it back to another launcher before removing."
     for path in \
         "${DEST_LNF}" \
         "${DEST_SPLASH}" \
         "${DEST_DESKTOPTHEME}" \
-        "${DEST_PLASMOID}" \
         "${DEST_AURORAE}" \
         "${DEST_KVANTUM}"; do
         remove_path "$path"
