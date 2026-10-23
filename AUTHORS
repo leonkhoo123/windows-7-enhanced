@@ -1,16 +1,19 @@
  Windows 7 Enhanced  (KDE Plasma theme pack)
  ==============================================================================
  Maintainer : Leon Khoo
- License    : GPL-3.0-or-later (see COPYING and LICENSES.md)
+ License    : GPL-3.0-or-later (theme components)
+              AGPL-3.0-or-later (bundled start menu)
 
  Based on / credits
  ------------------
    ExposeAir (Plasma theme, window decoration, Kvantum theme, color scheme)
         Mark Whittaker (Phobian347)  -  https://www.pling.com/u/phob1an/
    windows7splash (splash)  luis-pseudo, original by AudacityXD62
+   Windows7StartMenu4KDE (start menu)
+        walterdemacedorodrigues  -  https://github.com/walterdemacedorodrigues/Windows7StartMenu4KDE
 
- Components (all GPL-3.0-or-later)
- ---------------------------------
+ Components - theme (GPL-3.0-or-later)
+ -------------------------------------
    look-and-feel/windows-7-enhanced         Plasma global theme
    look-and-feel/windows-7-enhanced-splash  splash (fork of windows7splash)
    plasma/desktoptheme/windows-7-enhanced   Plasma theme (fork of ExposeAir)
@@ -18,6 +21,11 @@
    kvantum/windows-7-enhanced               Kvantum theme (fork of ExposeAir)
    color-schemes/Windows7Enhanced           color scheme
    color-schemes/Windows7EnhancedAero       color scheme (fork of ExposeAir)
+
+ Component - start menu (AGPL-3.0-or-later)
+ ------------------------------------------
+   plasmoids/Windows7StartMenu4KDE          start menu
+                                            (patched fork of Windows7StartMenu4KDE)
 
  Not in this repository
  ----------------------

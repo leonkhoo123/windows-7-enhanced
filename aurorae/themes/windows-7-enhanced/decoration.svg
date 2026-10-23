@@ -778,6 +778,12 @@
        y="166" /><g
        id="mask-bottom"
        transform="translate(-10,-10)" /><rect
+       id="mask-center"
+       x="-10"
+       y="-10"
+       width="400"
+       height="400"
+       style="fill:#ffffff;fill-opacity:1;stroke:none" /><rect
        style="opacity:0.55;fill:url(#linearGradient51);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:17.0477;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
        id="decoration-maximized-center"
        width="28.000113"
