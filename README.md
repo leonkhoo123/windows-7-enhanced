@@ -33,6 +33,25 @@ cd windows-7-enhanced-icons && ./install.sh
 
 *(that icon pack is CC BY-NC-SA — non-commercial.)*
 
+## Login screen (Plasma Login / SDDM)
+
+**System Settings → Login Screen → Apply Plasma Settings…** copies your Plasma
+configuration to the `plasmalogin` greeter account. That is a system account,
+so it cannot read themes installed under your home directory — anything it
+references must also be installed system-wide (the KCM warns about this).
+
+If the greeter's **Sleep / Restart / Shut Down** buttons look like plain text
+with no icons, its saved config points at an icon theme that only exists in
+your user account. Fix it by either:
+
+* re-applying the login-screen settings (**Login Screen → Apply Plasma
+  Settings… → Apply**) — the greeter then uses KDE's built-in **Breeze**
+  icons; the icon pack also ships Breeze artwork for those same session/power
+  actions; or
+* installing the icon theme system-wide (e.g. copying
+  `~/.local/share/icons/windows-7-enhanced` to `/usr/share/icons/`) if you want
+  the full Windows 7 icon set available to the greeter too.
+
 ## Kvantum engine (install separately)
 
 The pack sets `widgetStyle=kvantum`, which needs the **Kvantum engine** (an
